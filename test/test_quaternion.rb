@@ -1,9 +1,8 @@
 require_relative "minitest_helper"
 
-include Math
-
 class TestQuaternion < Minitest::Test
   include MinitestHelper
+  include Math
 
   def setup
     @q = Quaternion.new(1.0, 2.0, 3.0, 4.0)
